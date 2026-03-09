@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✨ AI Prompt Helper</h1>
+      <p class="subtitle">Write better prompts in seconds</p>
+    </header>
+
+    <div class="input-section">
+      <textarea id="promptInput" placeholder="Type or paste your prompt here..."></textarea>
+      <button id="improveBtn" class="btn btn-primary">Improve Prompt</button>
+    </div>
+
+    <div id="resultSection" class="result-section hidden">
+      <h3>Your improved prompt:</h3>
+      <div id="resultText" class="result-text"></div>
+      <button id="copyBtn" class="btn btn-copy">📋 Copy to Clipboard</button>
+      <span id="copyFeedback" class="copy-feedback hidden">Copied!</span>
+    </div>
+
+    <div class="templates-section">
+      <h3>Quick Templates</h3>
+      <div class="template-grid">
+        <button class="template-btn" data-template="email">✉️ Email</button>
+        <button class="template-btn" data-template="summary">📝 Summary</button>
+        <button class="template-btn" data-template="brainstorm">💡 Brainstorm</button>
+        <button class="template-btn" data-template="rewrite">✏️ Rewrite</button>
+        <button class="template-btn" data-template="translate">🌍 Translate</button>
+        <button class="template-btn" data-template="code-review">💻 Code Review</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built by <a href="https://www.handonweb.com" target="_blank">Hand On Web</a> — <a href="https://www.handonweb.com" target="_blank">handonweb.com</a></p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
